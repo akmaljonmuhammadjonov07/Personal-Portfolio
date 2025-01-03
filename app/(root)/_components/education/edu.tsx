@@ -1,0 +1,68 @@
+const Education = () => {
+	const edu = [
+		{
+			company: 'Codemy',
+			link: 'https://codemy.uz/',
+			role: 'Frontend Developer',
+			date: 'January 2023 - April 2024',
+			logo: '/CodemyLogo.dd7deaf58a19edb179a9.png',
+		},
+		{
+			company: 'Sammi | Praktikum',
+			link: 'https://www.sammi.ac/',
+			role: 'Frontend | Fullstack Developer',
+			date: 'June 2024 - November 2024',
+			logo: '/logo.svg',
+		},
+		{
+			company: 'Amigoscode',
+			role: 'Git - Github',
+			date: 'December 2024 - 1 month',
+			logo: 'download.png',
+		},
+		{
+			company: 'Geeksforgeeks',
+			role: 'Backend | Frontend Developer',
+			date: 'January 2018 - April 2018',
+			logo: 'path/to/lime-logo.png',
+		},
+		{
+			company: 'Mitre Media',
+			role: 'Software Engineer',
+			date: 'May 2017 - August 2017',
+			logo: 'path/to/mitre-media-logo.png',
+		},
+	];
+
+	return (
+		<div className='max-w-4xl md:max-w-2xl xl:max-w-4xl mx-auto p-6'>
+			<h2 className='text-2xl font-bold mb-4'>Education</h2>
+			<ul className='space-y-6'>
+				{edu.map((e, index) => (
+					<a
+						href={e.link}
+						key={index}
+						className='flex items-center justify-between'
+					>
+						<div className='flex items-center'>
+							<img
+								src={e.logo}
+								alt={e.company}
+								className='w-12 h-12 rounded-full mr-4'
+							/>
+							<div className='max-sm:text-xs'>
+								<h3 className='font-semibold'>{e.company}</h3>
+								<p className='text-sm text-gray-600'>{e.role}</p>
+							</div>
+						</div>
+						<div className='max-sm:text-xs'>
+							<p className='text-sm text-gray-500'>{e.date}</p>
+						</div>
+					</a>
+				))}
+			</ul>
+		</div>
+	);
+};
+
+export default Education;
