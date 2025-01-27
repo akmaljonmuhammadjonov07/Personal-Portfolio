@@ -5,32 +5,34 @@ const Education = () => {
 			link: 'https://codemy.uz/',
 			role: 'Frontend Developer',
 			date: 'January 2023 - April 2024',
-			logo: '/CodemyLogo.dd7deaf58a19edb179a9.png',
+			logo: '/codemy.png',
 		},
 		{
 			company: 'Sammi | Praktikum',
 			link: 'https://www.sammi.ac/',
 			role: 'Frontend | Fullstack Developer',
 			date: 'June 2024 - November 2024',
-			logo: '/logo.svg',
+			logo: '/sammi.svg',
 		},
 		{
 			company: 'Amigoscode',
-			role: 'Git - Github',
-			date: 'December 2024 - 1 month',
-			logo: 'download.png',
+			link: 'https://www.amigoscode.com/',
+			role: 'Git - Github Developer',
+			date: 'December 2024 - 1-month',
+			logo: 'amigos.png',
 		},
 		{
 			company: 'Geeksforgeeks',
+			link: 'https://www.geeksforgeeks.org/',
 			role: 'Backend | Frontend Developer',
 			date: 'January 2018 - April 2018',
-			logo: 'path/to/lime-logo.png',
+			logo: '/geks.png',
 		},
 		{
 			company: 'Mitre Media',
 			role: 'Software Engineer',
 			date: 'May 2017 - August 2017',
-			logo: 'path/to/mitre-media-logo.png',
+			logo: '/codemy.png',
 		},
 	];
 
@@ -51,12 +53,16 @@ const Education = () => {
 								className='w-12 h-12 rounded-full mr-4'
 							/>
 							<div className='max-sm:text-xs'>
-								<h3 className='font-semibold'>{e.company}</h3>
-								<p className='text-sm text-gray-600'>{e.role}</p>
+								<h3 className='font-semibold '>{e.company}</h3>
+								<p className='text-sm text-gray-600 dark:text-gray-400'>
+									{e.role}
+								</p>
 							</div>
 						</div>
 						<div className='max-sm:text-xs'>
-							<p className='text-sm text-gray-500'>{e.date}</p>
+							<p className='text-sm text-gray-500 dark:text-gray-300'>
+								{e.date}
+							</p>
 						</div>
 					</a>
 				))}

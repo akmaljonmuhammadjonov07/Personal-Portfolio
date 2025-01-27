@@ -1,40 +1,42 @@
+import Image from 'next/image';
+
 const WorkExperience = () => {
 	const experiences = [
 		{
 			company: 'Atomic Finance',
 			role: 'Bitcoin Protocol Engineer',
 			date: 'May 2021 - Oct 2022',
-			logo: 'path/to/atomic-finance-logo.png', // Shu yerga logoni yuklang
+			logo: '/codemy.png',
 		},
 		{
 			company: 'Shopify',
 			role: 'Software Engineer',
 			date: 'January 2021 - April 2021',
-			logo: 'path/to/shopify-logo.png',
+			logo: '/codemy.png',
 		},
 		{
 			company: 'Nvidia',
 			role: 'Software Engineer',
 			date: 'January 2020 - April 2020',
-			logo: 'path/to/nvidia-logo.png',
+			logo: '/codemy.png',
 		},
 		{
 			company: 'Splunk',
 			role: 'Software Engineer',
 			date: 'January 2019 - April 2019',
-			logo: 'path/to/splunk-logo.png',
+			logo: '/codemy.png',
 		},
 		{
 			company: 'Lime',
 			role: 'Software Engineer',
 			date: 'January 2018 - April 2018',
-			logo: 'path/to/lime-logo.png',
+			logo: '/codemy.png',
 		},
 		{
 			company: 'Mitre Media',
 			role: 'Software Engineer',
 			date: 'May 2017 - August 2017',
-			logo: 'path/to/mitre-media-logo.png',
+			logo: '/codemy.png',
 		},
 	];
 
@@ -45,18 +47,24 @@ const WorkExperience = () => {
 				{experiences.map((exp, index) => (
 					<li key={index} className='flex items-center justify-between'>
 						<div className='flex items-center'>
-							<img
+							<Image
+								width={100}
+								height={100}
 								src={exp.logo}
 								alt={exp.company}
 								className='w-12 h-12 rounded-full mr-4'
 							/>
 							<div className='max-sm:text-xs'>
 								<h3 className='font-semibold'>{exp.company}</h3>
-								<p className='text-sm text-gray-600'>{exp.role}</p>
+								<p className='text-sm text-gray-600 dark:text-gray-400'>
+									{exp.role}
+								</p>
 							</div>
 						</div>
 						<div className='max-sm:text-xs'>
-							<p className='text-sm text-gray-500'>{exp.date}</p>
+							<p className='text-sm text-gray-500 dark:text-gray-300'>
+								{exp.date}
+							</p>
 						</div>
 					</li>
 				))}

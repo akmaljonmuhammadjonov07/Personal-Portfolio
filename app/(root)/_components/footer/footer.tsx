@@ -8,7 +8,7 @@ function Footer() {
 	const [active, setActive] = useState(false);
 	return (
 		<div className='flex justify-center'>
-			<footer className='flex justify-center py-10 flex-col container max-w-2xl space-y-12'>
+			<footer className='flex justify-center py-10 flex-col container max-w-2xl max-sm:mx-10 space-y-12'>
 				<h1 className='font-creteRound max-md:text-3xl text-5xl text-center'>
 					Get latest posts delivered right to your inbox
 				</h1>
@@ -29,7 +29,7 @@ function Footer() {
 					</Button>
 				</div>
 				<div className='sticky bottom-5 p-0 m-0'>
-					<div className='flex gap-6 justify-center items-center z-50 bg-black hover:shadow-2xl shadow-black p-4 px-2 max-w-xs m-auto text-white rounded-full'>
+					<div className='flex gap-6 justify-center items-center z-50 bg-secondary hover:shadow-2xl shadow-black p-4 px-2 max-w-xs m-auto text-white rounded-full'>
 						<Link href={'https://t.me/akmaldev14'} target='_blank'>
 							<Send />
 						</Link>

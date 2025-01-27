@@ -10,7 +10,7 @@ const SkillApp = () => {
 		{ title: 'Git / Github' },
 		{ title: 'CSS / SASS' },
 		{ title: 'Tailwindcss' },
-		{ title: 'GraphQL' },
+		{ title: 'CMS' },
 		{ title: 'FireBase' },
 		{ title: 'Telegrambot' },
 		{ title: 'SEO' },
