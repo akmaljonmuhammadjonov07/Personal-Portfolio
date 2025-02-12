@@ -1,4 +1,4 @@
-import WorkExperience from '../_components/work/work';
+// import WorkExperience from '../_components/work/work';
 import Projects from '../_components/projects/project';
 import Education from '../_components/education/edu';
 import SkillApp from '../_components/skills';
@@ -41,11 +41,11 @@ function Page() {
 						priority
 					/>
 					<div className='text-center lg:w-2/3 grid justify-items-center'>
-						<h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-gray-300'>
-							Hi, Im Akmal 👋
-						</h1>
 						<h1 className='text-start sm:text-2xl text-3xl mb-4 font-semibold text-gray-900 dark:text-gray-300'>
 							About me
+						</h1>
+						<h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-gray-300'>
+							Hi, Im Akmal 👋
 						</h1>
 						<p className='mb-8 leading-relaxed text-gray-700 dark:text-gray-300 w-[70%]'>
 							Hello! My name is <span className='font-bold'>Akmaljon</span>. I
@@ -130,9 +130,9 @@ function Page() {
 					</div>
 				</div>
 			</section>
-			<section>
+			{/* <section>
 				<WorkExperience />
-			</section>
+			</section> */}
 			<section>
 				<Education />
 			</section>
