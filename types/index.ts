@@ -37,3 +37,6 @@ export interface IBlog {
 	content: { html: string };
 	slug: string;
 }
+export interface UserCardProps {
+	title: string;
+}

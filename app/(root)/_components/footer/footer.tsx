@@ -1,9 +1,11 @@
 'use client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Instagram, Linkedin, LucideGithub, Send, User2 } from 'lucide-react';
+import { footerLinks } from '@/constants';
+import { User2 } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
+
 function Footer() {
 	const [active, setActive] = useState(false);
 	return (
@@ -30,27 +32,13 @@ function Footer() {
 				</div>
 				<div className='sticky bottom-5 p-0 m-0'>
 					<div className='flex gap-6 justify-center items-center z-50 bg-secondary hover:shadow-2xl shadow-black p-4 px-2 max-w-xs m-auto text-white rounded-full'>
-						<Link href={'https://t.me/akmaldev14'} target='_blank'>
-							<Send />
-						</Link>
-						<Link
-							href={'https://www.instagram.com/akmal__dev/'}
-							target='_blank'
-						>
-							<Instagram />
-						</Link>
-						<Link
-							href={'https://www.linkedin.com/in/akmaljon-muhammadjonov'}
-							target='_blank'
-						>
-							<Linkedin />
-						</Link>
-						<Link
-							href={'https://github.com/akmaljonmuhammadjonov07/'}
-							target='_blank'
-						>
-							<LucideGithub />
-						</Link>
+						{footerLinks.map((link, index) => (
+							<div key={index} className='flex flex-wrap'>
+								<Link href={link.link} target='_blank'>
+									{link.icon && <link.icon />}
+								</Link>
+							</div>
+						))}
 					</div>
 				</div>
 			</footer>

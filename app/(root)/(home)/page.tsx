@@ -1,5 +1,5 @@
 // import WorkExperience from '../_components/work/work';
-import Projects from '../_components/projects/project';
+import Projects from '../_components/featured-projects/project';
 import Education from '../_components/education/edu';
 import SkillApp from '../_components/skills';
 import { Button } from '@/components/ui/button';
@@ -13,21 +13,10 @@ import {
 } from '@/components/ui/dialog';
 
 import Skill from '../_components/skills/skill';
+import { ArrowRight } from 'lucide-react';
+import { skills } from '@/constants';
+
 function Page() {
-	const skills = [
-		{ title: 'JavaScript' },
-		{ title: 'TypeScript' },
-		{ title: 'React.js' },
-		{ title: 'Next.js' },
-		{ title: 'Redux' },
-		{ title: 'Git / Github' },
-		{ title: 'CSS / SASS' },
-		{ title: 'Tailwindcss' },
-		{ title: 'CMS' },
-		{ title: 'FireBase' },
-		{ title: 'Telegrambot' },
-		{ title: 'SEO' },
-	];
 	return (
 		<div className='relative'>
 			<section className='text-gray-600 body-font '>
@@ -63,7 +52,16 @@ function Page() {
 						<div className='justify-center gap-3 hidden sm:hidden max-sm:hidden md:flex'>
 							<Dialog>
 								<DialogTrigger asChild>
-									<Button variant='secondary'>About me</Button>
+									<div className='group relative cursor-pointer p-2 w-32 border dark:bg-white bg-slate-300 rounded-full overflow-hidden text-black text-center font-semibold'>
+										<span className='translate-x-1 group-hover:translate-x-12 group-hover:opacity-0 transition-all duration-300 inline-block'>
+											About
+										</span>
+										<div className='flex gap-2 text-white z-10 items-center absolute top-0 h-full w-full justify-center translate-x-12 opacity-0 group-hover:-translate-x-1 group-hover:opacity-100 transition-all duration-300'>
+											<span>About</span>
+											<ArrowRight />
+										</div>
+										<div className='absolute top-[40%] left-[20%] h-2 w-2 group-hover:h-full group-hover:w-full rounded-lg bg-black scale-[1] dark:group-hover:bg-blue-500 group-hover:bg-[#7a7f9a] group-hover:scale-[1.8] transition-all duration-300 group-hover:top-[0%] group-hover:left-[0%] '></div>
+									</div>
 								</DialogTrigger>
 								<DialogContent className='xl:max-w-7xl max-sm:max-w-xl sm:hidden md:block'>
 									<DialogHeader>

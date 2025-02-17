@@ -9,9 +9,10 @@ import {
 } from '@/components/ui/dialog';
 import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
-import { edu } from './data';
+
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { edu } from '@/constants';
 
 const Education = () => {
 	return (
@@ -31,7 +32,7 @@ const Education = () => {
 									<h3 className='font-semibold '>{e.company}</h3>
 									<Dialog>
 										<DialogTrigger asChild>
-											<button>
+											<button className='sm:hidden max-sm:hidden md:flex'>
 												<SquareArrowOutUpRight size={15} />
 											</button>
 										</DialogTrigger>

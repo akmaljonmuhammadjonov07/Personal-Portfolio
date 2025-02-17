@@ -1,9 +1,6 @@
 import { Badge } from '@/components/ui/badge';
+import { UserCardProps } from '@/types';
 import React from 'react';
-
-interface UserCardProps {
-	title: string;
-}
 
 function Skill({ title }: UserCardProps) {
 	return (
