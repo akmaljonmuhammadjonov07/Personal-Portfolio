@@ -37,7 +37,7 @@ export const projects = [
 		title: 'Portfolio Website',
 		description: 'A personal portfolio built with Next.js and Tailwind.',
 		image: '/projects/portfolio.png',
-		link: 'https://yourecommerce.com',
+		link: 'https://akmaldev.uz',
 		gitlink: 'https://github.com/akmaljonmuhammadjonov07/Personal-Portfolio',
 		skills: [
 			{ title: 'TypeScript' },

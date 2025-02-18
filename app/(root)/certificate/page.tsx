@@ -24,7 +24,7 @@ export default function Page() {
 							}}
 							whileTap={{ scale: 0.92 }}
 							transition={{ duration: 0.1, ease: 'easeInOut' }}
-							className='bg-white shadow-2xl rounded-2xl overflow-hidden p-4 transition-all relative'
+							className='bg-white dark:bg-secondary dark:text-white shadow-2xl rounded-2xl overflow-hidden p-4 transition-all relative'
 						>
 							<motion.div
 								initial={{ scale: 0 }}
@@ -42,10 +42,10 @@ export default function Page() {
 								/>
 							</div>
 							<div className='p-4 relative z-10'>
-								<h3 className='text-lg font-semibold  text-gray-600'>
+								<h3 className='text-lg font-semibold dark:text-white text-gray-600'>
 									{project.title}
 								</h3>
-								<h3 className='text-sm text-gray-600 min-h-12 flex items-center'>
+								<h3 className='text-sm text-gray-600 dark:text-gray-300 min-h-12 flex items-center'>
 									{project.description}
 								</h3>
 								<div className='gap-2 flex flex-wrap my-2 mb-4'>
@@ -58,8 +58,8 @@ export default function Page() {
 										href={project.link}
 										target='_blank'
 										rel='noopener noreferrer'
-										whileHover={{ scale: 1.15, color: '#1d4ed8' }}
-										className='flex items-center gap-2 text-blue-600 h-full'
+										whileHover={{ scale: 1.15 }}
+										className='flex items-center gap-2 text-blue-600 hover:underline dark:text-white h-full'
 									>
 										View Site <ExternalLink size={16} />
 									</motion.a>

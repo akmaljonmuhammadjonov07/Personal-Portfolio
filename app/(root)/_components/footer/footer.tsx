@@ -31,7 +31,7 @@ function Footer() {
 					</Button>
 				</div>
 				<div className='sticky bottom-5 p-0 m-0'>
-					<div className='flex gap-6 justify-center items-center z-50 bg-secondary hover:shadow-2xl shadow-black p-4 px-2 max-w-xs m-auto text-white rounded-full'>
+					<div className='flex gap-6 justify-center items-center z-50 dark:bg-secondary bg-gray-800 shadow hover:shadow-2xl shadow-black p-4 px-2 max-w-xs m-auto text-white rounded-full'>
 						{footerLinks.map((link, index) => (
 							<div key={index} className='flex flex-wrap'>
 								<Link href={link.link} target='_blank'>

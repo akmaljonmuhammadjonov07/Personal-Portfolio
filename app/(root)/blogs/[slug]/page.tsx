@@ -11,7 +11,7 @@ async function Page({ params }: { params: { slug: string } }) {
 	const blog = await getDetailedBlog(params.slug);
 
 	return (
-		<div className='container mx-auto max-w-5xl pt-[15vh]'>
+		<div className='container mx-auto max-w-5xl pt-[15vh] px-10'>
 			<h1 className='font-space-grotesk text-4xl font-bold md:text-5xl lg:text-6xl'>
 				{blog.title}
 			</h1>
