@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 		url: 'https://akmaldev.uz',
 		locale: 'en_EN',
 		images:
-			'https://www.canva.com/design/DAGYMvUkjbw/hAGc7Dj8C54gt-qHcBDxXg/view?utm_content=DAGYMvUkjbw&utm_campaign=designshare&utm_medium=link&utm_source=editor',
+			'https://personal-portfolio-tan-six.vercel.app/_next/image?url=https%3A%2F%2Fus-west-2.graphassets.com%2Fcm3qooap50d2407k649bxflq5%2Fcm3u08x6ghgt807n0xv8w4vvd&w=750&q=75',
 		countryName: 'Uzbekistan',
 		siteName: 'Blog',
 		emails: 'info@akmaldev.uz',
