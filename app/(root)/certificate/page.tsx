@@ -5,8 +5,13 @@ import { ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { certificates } from '@/constants';
 import { Badge } from '@/components/ui/badge';
+import { useEffect } from 'react';
 
 export default function Page() {
+	useEffect(() => {
+		document.title = 'Certificates';
+	}, []);
+
 	return (
 		<section className='py-12'>
 			<div className='container mx-auto px-6'>

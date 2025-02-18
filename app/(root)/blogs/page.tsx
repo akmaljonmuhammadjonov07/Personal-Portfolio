@@ -1,6 +1,11 @@
 import BlogCard from '@/components/BlogCard/card';
 
 import { getBlogs } from '@/service/blog.service';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	title: "Akmaldev's blogs",
+};
 
 async function Page() {
 	const blogs = await getBlogs();

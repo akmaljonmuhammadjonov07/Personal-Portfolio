@@ -1,4 +1,9 @@
 import { ContactForm } from '@/components/forms/form';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	title: 'Contact us',
+};
 
 async function Page() {
 	return (

@@ -5,8 +5,13 @@ import { ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { projects } from '@/constants';
 import { Badge } from '@/components/ui/badge';
+import { useEffect } from 'react';
 
 export default function Page() {
+	useEffect(() => {
+		document.title = 'All Projects';
+	}, []);
+
 	return (
 		<section className='py-12'>
 			<div className='container mx-auto px-6'>
