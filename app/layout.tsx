@@ -19,26 +19,40 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://akmaldev.uz'),
-	title: 'Akmaljon Muhammadjonov',
+	title: 'Akmaljon Muhammadjonov - Portfolio, Blog & IT Maqolalar',
 	description:
 		"Dasturlash va o'zim haqimda yangiliklar, maslahatlar, loyihalar, va dasturlash sohasidagi eng so'nggi xabarlar.",
 	authors: [{ name: 'Akmaljon Muhammadjonov', url: 'https://akmaldev.uz' }],
 	icons: { icon: '/favicon.png' },
-	keywords:
-		"akmal muhammadjonov, akmaljon muhammadjonov, akmaldev, dasturlash haqida maqolalar, dasturlashga oid yangiliklar, loyihalar, portfolio javascript, reactjs, nextjs, javascript proectlar, reactjs proectlar, nextjs proectlar, dasturlash tillari, o'zbek tilida maqolalar, reactjs o'zbek tilida, dasturlashni o'rganish, dasturlash, IT loyihalar o'zbek tilida, IT",
+	keywords: [
+		'akmal muhammadjonov',
+		'akmaljon muhammadjonov',
+		'akmaldev',
+		'dasturlash maqolalari',
+		'portfolio javascript',
+		'reactjs proectlar',
+		'nextjs proectlar',
+		'dasturlash tillari',
+		"o'zbek tilida maqolalar",
+		'dasturlashni o‘rganish',
+		'IT yangiliklari',
+	],
 	openGraph: {
-		title:
-			'Portfolio, Blog, dasturlashga oid maqolalar va loyihalar, yangiliklar',
+		title: 'Akmaljon Muhammadjonov - Portfolio, Blog & IT Maqolalar',
 		description:
 			'Dasturlash haqida yangiliklar, maslahatlar, va dasturlash sohasidagi eng soʻnggi xabarlar. Bizning blog va portfolioda dasturlashni oʻrganish va rivojlantirish uchun qoʻllanma topishingiz mumkin.',
 		type: 'website',
-		url: 'https://akmaldev.uz',
-		locale: 'en_EN',
-		images:
-			'https://www.canva.com/design/DAGawRZtmkA/rHIywt67KShedF8aki3Mhg/view?utm_content=DAGawRZtmkA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h53621794a4',
-		countryName: 'Uzbekistan',
-		siteName: 'Portfolio',
-		emails: 'info@akmaldev.uz',
+		url: new URL('/', 'https://akmaldev.uz').toString(),
+		locale: 'uz_UZ',
+		siteName: 'Akmaldev Portfolio',
+		images: [
+			{
+				url: 'https://www.akmaldev.uz/_next/image?url=https%3A%2F%2Fus-west-2.graphassets.com%2Fcm3qooap50d2407k649bxflq5%2Fcm3u08x6ghgt807n0xv8w4vvd&w=750&q=75',
+				width: 1200,
+				height: 630,
+				alt: 'Akmaljon Muhammadjonov - Portfolio',
+			},
+		],
 	},
 };
 
