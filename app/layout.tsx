@@ -4,6 +4,7 @@ import './globals.css';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import NextTopLoader from 'nextjs-toploader';
 import { Toaster } from 'sonner';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const geistSans = localFont({
 	src: './fonts/GeistVF.woff',
@@ -18,7 +19,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://akmaldev.uz'),
-	title: "Akmaljon's portfolio",
+	title: 'Akmaljon Muhammadjonov',
 	description:
 		"Dasturlash va o'zim haqimda yangiliklar, maslahatlar, loyihalar, va dasturlash sohasidagi eng so'nggi xabarlar.",
 	authors: [{ name: 'Akmaljon Muhammadjonov', url: 'https://akmaldev.uz' }],
@@ -62,6 +63,7 @@ export default function RootLayout({
 					{children}
 				</ThemeProvider>
 			</body>
+			<GoogleAnalytics gaId='G-2BT7Y69RES' />
 		</html>
 	);
 }
