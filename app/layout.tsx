@@ -26,16 +26,16 @@ export const metadata: Metadata = {
 	keywords:
 		"akmal muhammadjonov, akmaljon muhammadjonov, akmaldev, dasturlash haqida maqolalar, dasturlashga oid yangiliklar, loyihalar, portfolio javascript, reactjs, nextjs, javascript proectlar, reactjs proectlar, nextjs proectlar, dasturlash tillari, o'zbek tilida maqolalar, reactjs o'zbek tilida, dasturlashni o'rganish, dasturlash, IT loyihalar o'zbek tilida, IT",
 	openGraph: {
-		title: 'Blog, dasturlashga oid maqolalar va loyihalar, yangiliklar',
+		title: 'Portfolio, dasturlashga oid maqolalar va loyihalar, yangiliklar',
 		description:
 			'Dasturlash haqida yangiliklar, maslahatlar, va dasturlash sohasidagi eng soʻnggi xabarlar. Bizning blog va portfolioda dasturlashni oʻrganish va rivojlantirish uchun qoʻllanma topishingiz mumkin.',
 		type: 'website',
 		url: 'https://akmaldev.uz',
 		locale: 'en_EN',
 		images:
-			'https://personal-portfolio-tan-six.vercel.app/_next/image?url=https%3A%2F%2Fus-west-2.graphassets.com%2Fcm3qooap50d2407k649bxflq5%2Fcm3u08x6ghgt807n0xv8w4vvd&w=750&q=75',
+			'https://www.canva.com/design/DAGawRZtmkA/rHIywt67KShedF8aki3Mhg/view?utm_content=DAGawRZtmkA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h53621794a4',
 		countryName: 'Uzbekistan',
-		siteName: 'Blog',
+		siteName: 'Portfolio',
 		emails: 'info@akmaldev.uz',
 	},
 };
