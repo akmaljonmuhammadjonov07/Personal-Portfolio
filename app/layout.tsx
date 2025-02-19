@@ -26,7 +26,8 @@ export const metadata: Metadata = {
 	keywords:
 		"akmal muhammadjonov, akmaljon muhammadjonov, akmaldev, dasturlash haqida maqolalar, dasturlashga oid yangiliklar, loyihalar, portfolio javascript, reactjs, nextjs, javascript proectlar, reactjs proectlar, nextjs proectlar, dasturlash tillari, o'zbek tilida maqolalar, reactjs o'zbek tilida, dasturlashni o'rganish, dasturlash, IT loyihalar o'zbek tilida, IT",
 	openGraph: {
-		title: 'Portfolio, dasturlashga oid maqolalar va loyihalar, yangiliklar',
+		title:
+			'Portfolio, Blog, dasturlashga oid maqolalar va loyihalar, yangiliklar',
 		description:
 			'Dasturlash haqida yangiliklar, maslahatlar, va dasturlash sohasidagi eng soʻnggi xabarlar. Bizning blog va portfolioda dasturlashni oʻrganish va rivojlantirish uchun qoʻllanma topishingiz mumkin.',
 		type: 'website',
