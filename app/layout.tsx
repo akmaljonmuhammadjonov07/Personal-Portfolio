@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/providers/theme-provider';
 import NextTopLoader from 'nextjs-toploader';
 import { Toaster } from 'sonner';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { ChildProps } from '@/types';
 
 const geistSans = localFont({
 	src: './fonts/GeistVF.woff',
@@ -23,7 +24,9 @@ export const metadata: Metadata = {
 	description:
 		"Dasturlash va o'zim haqimda yangiliklar, maslahatlar, loyihalar, va dasturlash sohasidagi eng so'nggi xabarlar.",
 	authors: [{ name: 'Akmaljon Muhammadjonov', url: 'https://akmaldev.uz' }],
-	icons: { icon: '/favicon.png' },
+	icons: {
+		icon: '/favicon.png',
+	},
 	keywords: [
 		'akmal muhammadjonov',
 		'akmaljon muhammadjonov',
@@ -52,11 +55,7 @@ export const metadata: Metadata = {
 	},
 };
 
-export default function RootLayout({
-	children,
-}: Readonly<{
-	children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: ChildProps) {
 	return (
 		<html lang='en' suppressHydrationWarning>
 			<body
