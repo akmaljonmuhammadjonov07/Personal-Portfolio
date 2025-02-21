@@ -42,8 +42,8 @@ export const metadata: Metadata = {
 		description:
 			'Dasturlash haqida yangiliklar, maslahatlar, va dasturlash sohasidagi eng soʻnggi xabarlar. Bizning blog va portfolioda dasturlashni oʻrganish va rivojlantirish uchun qoʻllanma topishingiz mumkin.',
 		type: 'website',
-		url: new URL('/', 'https://akmaldev.uz').toString(),
-		locale: 'uz_UZ',
+		url: 'https://akmaldev.uz',
+		locale: 'en_EN',
 		siteName: 'Akmaldev Portfolio',
 		images: [
 			{
