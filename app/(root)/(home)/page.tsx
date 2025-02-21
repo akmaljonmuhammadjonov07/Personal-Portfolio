@@ -16,7 +16,7 @@ import Skill from '../_components/skills/skill';
 import { ArrowRight } from 'lucide-react';
 import { skills } from '@/constants';
 
-function Page() {
+function HomePage() {
 	return (
 		<div className='relative'>
 			<section className='text-gray-600 body-font '>
@@ -144,4 +144,4 @@ function Page() {
 	);
 }
 
-export default Page;
+export default HomePage;
