@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 	description:
 		"Dasturlash va o'zim haqimda yangiliklar, maslahatlar, loyihalar, va dasturlash sohasidagi eng so'nggi xabarlar.",
 	authors: [{ name: 'Akmaljon Muhammadjonov', url: 'https://akmaldev.uz' }],
-	icons: { icon: '/logo.png' },
+	icons: { icon: '/favicon.png' },
 	keywords: [
 		'akmal muhammadjonov',
 		'akmaljon muhammadjonov',
