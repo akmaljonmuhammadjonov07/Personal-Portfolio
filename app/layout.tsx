@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 	description:
 		"Dasturlash va o'zim haqimda yangiliklar, maslahatlar, loyihalar, va dasturlash sohasidagi eng so'nggi xabarlar.",
 	authors: [{ name: 'Akmaljon Muhammadjonov', url: 'https://akmaldev.uz' }],
-	icons: { icon: '/favicon.png' },
+	icons: { icon: '/logo.png' },
 	keywords: [
 		'akmal muhammadjonov',
 		'akmaljon muhammadjonov',
@@ -38,21 +38,17 @@ export const metadata: Metadata = {
 		'IT yangiliklari',
 	],
 	openGraph: {
-		title: 'Akmaljon Muhammadjonov - Portfolio, Blog & IT Maqolalar',
+		title: 'Akmaljon Muhammadjonov - Portfolio, Blog & IT',
 		description:
 			'Dasturlash haqida yangiliklar, maslahatlar, va dasturlash sohasidagi eng soʻnggi xabarlar. Bizning blog va portfolioda dasturlashni oʻrganish va rivojlantirish uchun qoʻllanma topishingiz mumkin.',
 		type: 'website',
 		url: 'https://akmaldev.uz',
 		locale: 'en_EN',
-		siteName: 'Akmaldev Portfolio',
-		images: [
-			{
-				url: 'https://www.akmaldev.uz/_next/image?url=https%3A%2F%2Fus-west-2.graphassets.com%2Fcm3qooap50d2407k649bxflq5%2Fcm3u08x6ghgt807n0xv8w4vvd&w=750&q=75',
-				width: 1200,
-				height: 630,
-				alt: 'Akmaljon Muhammadjonov - Portfolio',
-			},
-		],
+		images:
+			'https://www.setu.ie/Craft/assets/banners/_800x418_crop_center-center_82_none/informationtech.jpg?mtime=1711539742',
+		countryName: 'Uzbekistan',
+		siteName: 'Akmaljon | Frontend Developer',
+		emails: 'info@akmaldev.uz',
 	},
 };
 
