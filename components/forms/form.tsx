@@ -50,6 +50,8 @@ export function ContactForm({
 				toast.error('Xatolik yuz berdi! ❌');
 			}
 		} catch (error) {
+			console.log(error);
+
 			toast.error('Server bilan aloqa o‘rnatilmadi! ❌');
 		} finally {
 			setLoading(false);
