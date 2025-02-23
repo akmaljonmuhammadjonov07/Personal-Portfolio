@@ -16,7 +16,11 @@ function ModeToggle() {
 			<Sun />
 		</Button>
 	) : (
-		<Button size={'icon'} onClick={() => setTheme('dark')} variant={'ghost'}>
+		<Button
+			size={'icon'}
+			onClick={() => setTheme('dark')}
+			variant={'secondary'}
+		>
 			<Moon />
 		</Button>
 	);
