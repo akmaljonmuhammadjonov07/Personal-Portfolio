@@ -15,6 +15,7 @@ import {
 import Skill from '../_components/skills/skill';
 import { ArrowRight } from 'lucide-react';
 import { skills } from '@/constants';
+import Link from 'next/link';
 
 function HomePage() {
 	return (
@@ -117,6 +118,26 @@ function HomePage() {
 												My Resume
 											</h2>
 											<Button className='my-3'>Download CV</Button>
+										</section>
+										<section>
+											<div className='flex flex-col space-y-2'>
+												<p className='text-gray-400'>Feel free to reach out:</p>
+												<div className='flex gap-2 items-center'>
+													<Link
+														href='mailto:info@akmaldev.uz'
+														className='text-lg text-blue-400 hover:text-blue-300 transition-colors duration-300 font-semibold'
+													>
+														info@akmaldev.uz
+													</Link>
+													<span>or</span>
+													<Link
+														href={'https://t.me/akmaldev14'}
+														className='text-lg text-blue-400 hover:text-blue-300 transition-colors duration-300 font-semibold'
+													>
+														Telegram
+													</Link>
+												</div>
+											</div>
 										</section>
 									</div>
 								</DialogContent>

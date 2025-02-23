@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Github, Instagram, Linkedin, Send } from 'lucide-react';
+import { Github, Instagram, Linkedin, Mail, Send } from 'lucide-react';
 import Link from 'next/link';
 import { toast } from 'sonner';
 
@@ -79,7 +79,6 @@ export function ContactForm({
 						placeholder='m@example.com'
 						value={email}
 						onChange={e => setEmail(e.target.value)}
-						required
 					/>
 				</div>
 				<div className='grid gap-2'>
@@ -90,7 +89,6 @@ export function ContactForm({
 						placeholder='Create your name'
 						value={name}
 						onChange={e => setName(e.target.value)}
-						required
 					/>
 				</div>
 				<div className='grid gap-2'>
@@ -101,10 +99,9 @@ export function ContactForm({
 						placeholder='Xabaringizni kiriting...'
 						value={message}
 						onChange={e => setMessage(e.target.value)}
-						required
 					/>
 				</div>
-				<Button type='submit' className='w-full' disabled={loading}>
+				<Button onClick={handleSubmit} className='w-full' disabled={loading}>
 					{loading ? 'Yuborilmoqda...' : 'Send Message'}
 				</Button>
 				<div className='relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border'>
@@ -114,29 +111,44 @@ export function ContactForm({
 				</div>
 				<div className='flex gap-3 justify-center'>
 					<Link href={'https://t.me/akmaldev14'} target='_blank'>
-						<Button variant='secondary' size={'icon'}>
-							<Send />
+						<Button variant='secondary' size='icon' asChild>
+							<span>
+								<Send className='w-6 h-6' />
+							</span>
 						</Button>
 					</Link>
 					<Link href={'https://www.instagram.com/akmal__dev/'} target='_blank'>
-						<Button variant='secondary' size={'icon'}>
-							<Instagram />
+						<Button variant='secondary' size='icon' asChild>
+							<span>
+								<Instagram className='w-6 h-6' />
+							</span>
 						</Button>
 					</Link>
 					<Link
 						href={'https://www.linkedin.com/in/akmaljon-muhammadjonov'}
 						target='_blank'
 					>
-						<Button variant='secondary' size={'icon'}>
-							<Linkedin />
+						<Button variant='secondary' size='icon' asChild>
+							<span>
+								<Linkedin className='w-6 h-6' />
+							</span>
 						</Button>
 					</Link>
 					<Link
 						href={'https://github.com/akmaljonmuhammadjonov07/'}
 						target='_blank'
 					>
-						<Button variant='secondary' size={'icon'}>
-							<Github />
+						<Button variant='secondary' size='icon' asChild>
+							<span>
+								<Github className='w-6 h-6' />
+							</span>
+						</Button>
+					</Link>
+					<Link href={'mailto:info@akmaldev.uz'} target='_blank'>
+						<Button variant='secondary' size='icon' asChild>
+							<span>
+								<Mail className='w-6 h-6' />
+							</span>
 						</Button>
 					</Link>
 				</div>
