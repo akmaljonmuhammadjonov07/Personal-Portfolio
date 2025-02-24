@@ -22,6 +22,12 @@ export function ContactForm({
 		e.preventDefault(); // Sahifa refresh bo‘lishining oldini oladi
 		setLoading(true);
 
+		if (!email || !name || !message) {
+			toast.error('Iltimos, hammasini kiriting! ❌');
+			setLoading(false);
+			return;
+		}
+
 		const BOT_TOKEN = process.env.NEXT_PUBLIC_BOT_TOKEN; // .env.local faylida saqlangan token
 		const CHAT_ID = process.env.NEXT_PUBLIC_CHAT_ID; // .env.local faylida saqlangan chat ID
 
