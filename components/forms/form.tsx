@@ -153,7 +153,7 @@ export function ContactForm({
 							</span>
 						</Button>
 					</Link>
-					<Link href={'mailto:info@akmaldev.uz'} target='_blank'>
+					<Link href={'mailto:info@akmaldev.uz'}>
 						<Button variant='secondary' size='icon' asChild>
 							<span>
 								<Mail className='w-6 h-6' />

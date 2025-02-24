@@ -55,15 +55,15 @@ function Footer() {
 	};
 
 	return (
-		<div className='flex justify-center'>
-			<footer className='flex justify-center py-10 flex-col m-auto container max-w-2xl max-sm:mx-10 space-y-12'>
-				<h1 className='font-creteRound max-md:text-3xl text-5xl text-center'>
+		<div className='flex justify-center px-4 sm:px-6 lg:px-8'>
+			<footer className='flex flex-col items-center py-10 container max-w-2xl space-y-12 text-center'>
+				<h1 className='font-creteRound text-3xl sm:text-4xl md:text-5xl'>
 					Get latest posts delivered right to your inbox
 				</h1>
 
 				{/* Email Input Form */}
 				<form
-					className='flex flex-col md:flex-row gap-4 w-full'
+					className='flex flex-col sm:flex-row gap-4 w-full'
 					onSubmit={handleSubmit}
 				>
 					<Input
@@ -71,13 +71,13 @@ function Footer() {
 						placeholder='Your email address'
 						value={email}
 						onChange={e => setEmail(e.target.value)}
-						className='w-full'
+						className='w-full px-4 py-2 text-lg rounded-md border border-gray-300'
 					/>
 					<Button
 						type='submit'
 						size={'lg'}
 						disabled={loading}
-						className='w-full md:w-auto'
+						className='w-full sm:w-auto px-6 py-2 flex items-center justify-center gap-2'
 					>
 						<User2 className='w-4 h-4' />
 						{loading ? 'Yuborilmoqda...' : 'Join Today'}
@@ -85,38 +85,29 @@ function Footer() {
 				</form>
 
 				{/* Footer Links */}
-				<div className='sticky bottom-5 p-0 m-0'>
-					<div className='flex gap-6 justify-center items-center z-50 dark:bg-secondary bg-gray-800 shadow hover:shadow-2xl shadow-black p-4 px-2 max-w-md m-auto text-white rounded-full'>
-						<motion.div
-							initial={{ opacity: 0, y: 20 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.6, delay: 0.3 }}
-							className='flex justify-center items-center gap-6 text-muted-foreground'
+				<div className='sticky bottom-5 w-full max-w-sm sm:max-w-md p-4 bg-gray-800 shadow-lg rounded-full flex justify-center items-center gap-6 text-white'>
+					<motion.a
+						href='mailto:info@akmaldev.uz'
+						className='flex items-center gap-2 hover:text-gray-300 transition'
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.95 }}
+					>
+						<Mail className='w-5 h-5' />
+						<span className='hidden sm:inline'>info@akmaldev.uz</span>
+					</motion.a>
+					<div className='h-6 w-px bg-gray-500 hidden sm:block' />
+					{footerLinks.map(social => (
+						<motion.a
+							key={social.link}
+							href={social.link}
+							className='hover:text-gray-300 transition'
+							whileHover={{ scale: 1.1 }}
+							whileTap={{ scale: 0.95 }}
+							aria-label={social.link}
 						>
-							<motion.a
-								href='mailto:info@akmaldev.uz'
-								className='text-muted-foreground hover:text-foreground flex gap-2 transition-colors'
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.95 }}
-							>
-								<Mail /> info@akmaldev.uz
-							</motion.a>
-
-							<div className='h-6 w-px border-l border-gray-500' />
-							{footerLinks.map(social => (
-								<motion.a
-									key={social.link}
-									href={social.link}
-									className='text-muted-foreground hover:text-foreground transition-colors'
-									whileHover={{ scale: 1.1 }}
-									whileTap={{ scale: 0.95 }}
-									aria-label={social.link}
-								>
-									<social.icon className='h-5 w-5' />
-								</motion.a>
-							))}
-						</motion.div>
-					</div>
+							<social.icon className='w-5 h-5' />
+						</motion.a>
+					))}
 				</div>
 			</footer>
 		</div>
