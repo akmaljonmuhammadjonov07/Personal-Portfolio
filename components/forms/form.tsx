@@ -79,6 +79,7 @@ export function ContactForm({
 						placeholder='m@example.com'
 						value={email}
 						onChange={e => setEmail(e.target.value)}
+						required
 					/>
 				</div>
 				<div className='grid gap-2'>
@@ -89,6 +90,7 @@ export function ContactForm({
 						placeholder='Create your name'
 						value={name}
 						onChange={e => setName(e.target.value)}
+						required
 					/>
 				</div>
 				<div className='grid gap-2'>
@@ -99,6 +101,7 @@ export function ContactForm({
 						placeholder='Xabaringizni kiriting...'
 						value={message}
 						onChange={e => setMessage(e.target.value)}
+						required
 					/>
 				</div>
 				<Button onClick={handleSubmit} className='w-full' disabled={loading}>
