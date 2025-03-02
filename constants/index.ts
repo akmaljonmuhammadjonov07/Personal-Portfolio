@@ -9,14 +9,72 @@ import {
 	Newspaper,
 	Send,
 } from 'lucide-react';
+export const itemVariants = {
+	initial: { rotateX: 0, opacity: 1 },
+	hover: { rotateX: -90, opacity: 0 },
+};
 
-export const navLinks = [
-	{ name: 'Home', route: '/', icon: Home },
-	{ name: 'Blogs', route: '/blogs', icon: Newspaper },
-	{ name: 'Projects', route: '/projects', icon: AppWindow },
-	{ name: 'Certificates', route: '/certificate', icon: FileText },
-	{ name: 'Contact', route: '/contact', icon: CircleUser },
-];
+export const backVariants = {
+	initial: { rotateX: 90, opacity: 0 },
+	hover: { rotateX: 0, opacity: 1 },
+};
+
+export const glowVariants = {
+	initial: { opacity: 0, scale: 0.8 },
+	hover: {
+		opacity: 1,
+		scale: 2,
+		transition: {
+			opacity: { duration: 0.5, ease: [0.4, 0, 0.2, 1] },
+			scale: { duration: 0.5, type: 'spring', stiffness: 300, damping: 25 },
+		},
+	},
+};
+
+export const navGlowVariants = {
+	initial: { opacity: 0 },
+	hover: {
+		opacity: 1,
+		transition: {
+			duration: 0.5,
+			ease: [0.4, 0, 0.2, 1],
+		},
+	},
+};
+
+export const sharedTransition = {
+	type: 'spring',
+	stiffness: 100,
+	damping: 20,
+	duration: 0.5,
+};
+
+export const navLinks = {
+	links: [
+		{ name: 'Home', route: '/', icon: Home },
+		{ name: 'Blogs', route: '/blogs', icon: Newspaper },
+		{ name: 'Projects', route: '/projects', icon: AppWindow },
+		{ name: 'Certificates', route: '/certificate', icon: FileText },
+		{ name: 'Contact', route: '/contact', icon: CircleUser },
+	],
+	gradients: [
+		'radial-gradient(circle, rgba(59,130,246,0.15) 0%, rgba(37,99,235,0.06) 50%, rgba(29,78,216,0) 100%)', // Moviy
+		'radial-gradient(circle, rgba(249,115,22,0.15) 0%, rgba(234,88,12,0.06) 50%, rgba(194,65,12,0) 100%)', // To‘q sariq
+		'radial-gradient(circle, rgba(250,204,21,0.15) 0%, rgba(234,179,8,0.06) 50%, rgba(202,138,4,0) 100%)', // Sariq
+		'radial-gradient(circle, rgba(239,68,68,0.15) 0%, rgba(220,38,38,0.06) 50%, rgba(185,28,28,0) 100%)', // Qizil
+		'radial-gradient(circle, rgba(168,85,247,0.15) 0%, rgba(147,51,234,0.06) 50%, rgba(126,34,206,0) 100%)', // Binafsha
+		'radial-gradient(circle, rgba(34,197,94,0.15) 0%, rgba(22,163,74,0.06) 50%, rgba(21,128,61,0) 100%)', // Yashil
+	],
+
+	iconColors: [
+		'text-blue-500',
+		'text-orange-500',
+		'text-yellow-500',
+		'text-red-500',
+		'text-purple-500',
+		'text-green-500',
+	],
+};
 export const skills = [
 	{ title: 'JavaScript' },
 	{ title: 'TypeScript' },

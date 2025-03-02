@@ -61,7 +61,6 @@ function Footer() {
 					Get latest posts delivered right to your inbox
 				</h1>
 
-				{/* Email Input Form */}
 				<form
 					className='flex flex-col sm:flex-row gap-4 w-full'
 					onSubmit={handleSubmit}
@@ -84,11 +83,10 @@ function Footer() {
 					</Button>
 				</form>
 
-				{/* Footer Links */}
-				<div className='sticky bottom-5 w-full max-w-sm sm:max-w-md p-4 bg-gray-800 shadow-lg rounded-full flex justify-center items-center gap-6 text-white'>
+				<div className='sticky bottom-5 w-full max-w-sm sm:max-w-md p-4 bg-secondary shadow-lg rounded-full flex justify-center items-center gap-6 text-black dark:text-white'>
 					<motion.a
 						href='mailto:info@akmaldev.uz'
-						className='flex items-center gap-2 hover:text-gray-300 transition'
+						className='flex items-center gap-2 hover:text-black transition'
 						whileHover={{ scale: 1.1 }}
 						whileTap={{ scale: 0.95 }}
 					>
@@ -100,7 +98,7 @@ function Footer() {
 						<motion.a
 							key={social.link}
 							href={social.link}
-							className='hover:text-gray-300 transition'
+							className='dark:hover:text-gray-300 hover:text-black transition'
 							whileHover={{ scale: 1.1 }}
 							whileTap={{ scale: 0.95 }}
 							aria-label={social.link}
