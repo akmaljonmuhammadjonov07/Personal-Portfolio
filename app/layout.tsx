@@ -6,6 +6,7 @@ import NextTopLoader from 'nextjs-toploader';
 import { Toaster } from 'sonner';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { ChildProps } from '@/types';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const geistSans = localFont({
 	src: './fonts/GeistVF.woff',
@@ -73,6 +74,7 @@ export default function RootLayout({ children }: ChildProps) {
 				</ThemeProvider>
 			</body>
 			<GoogleAnalytics gaId='G-2BT7Y69RES' />
+			<SpeedInsights />
 		</html>
 	);
 }
