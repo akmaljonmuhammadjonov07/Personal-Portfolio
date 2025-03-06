@@ -69,12 +69,12 @@ export default function RootLayout({ children }: ChildProps) {
 					disableTransitionOnChange
 				>
 					<NextTopLoader showSpinner={false} />
+					<SpeedInsights />
 					<Toaster position='top-center' />
 					{children}
 				</ThemeProvider>
 			</body>
 			<GoogleAnalytics gaId='G-2BT7Y69RES' />
-			<SpeedInsights />
 		</html>
 	);
 }
