@@ -117,7 +117,14 @@ function HomePage() {
 											<h2 className='text-lg font-semibold dark:text-gray-400 text-gray-600'>
 												My Resume
 											</h2>
-											<Button className='my-3'>Download CV</Button>
+											<Link
+												target='_blank'
+												rel='noreferrer'
+												href={'/resume/Resume.pdf'}
+												title='CV'
+											>
+												<Button>Download CV</Button>
+											</Link>
 										</section>
 										<section>
 											<div className='flex flex-col space-y-2'>
@@ -144,7 +151,14 @@ function HomePage() {
 							</Dialog>
 						</div>
 						<div className='justify-center gap-3 sm:flex md:hidden'>
-							<Button>Download CV</Button>
+							<Link
+								target='_blank'
+								rel='noreferrer'
+								href={'/resume/Resume.pdf'}
+								title='CV'
+							>
+								<Button>Download CV</Button>
+							</Link>
 						</div>
 					</div>
 				</div>
