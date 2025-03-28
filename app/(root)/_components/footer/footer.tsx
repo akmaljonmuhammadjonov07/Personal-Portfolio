@@ -1,11 +1,10 @@
 'use client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { footerLinks } from '@/constants';
-import { Mail, User2 } from 'lucide-react';
+import { User2 } from 'lucide-react';
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { toast } from 'sonner';
+import FooterNav from './footer_nav';
 
 function Footer() {
 	const [email, setEmail] = useState('');
@@ -82,30 +81,8 @@ function Footer() {
 						{loading ? 'Yuborilmoqda...' : 'Join Today'}
 					</Button>
 				</form>
-
 				<div className='sticky bottom-5 w-full max-w-sm sm:max-w-md p-4 bg-secondary shadow-lg rounded-full flex justify-center items-center gap-6 text-black dark:text-white'>
-					<motion.a
-						href='mailto:info@akmaldev.uz'
-						className='flex items-center gap-2 hover:text-black transition'
-						whileHover={{ scale: 1.1 }}
-						whileTap={{ scale: 0.95 }}
-					>
-						<Mail className='w-5 h-5' />
-						<span className='hidden sm:inline'>info@akmaldev.uz</span>
-					</motion.a>
-					<div className='h-6 w-px bg-gray-500 hidden sm:block' />
-					{footerLinks.map(social => (
-						<motion.a
-							key={social.link}
-							href={social.link}
-							className='dark:hover:text-gray-300 hover:text-black transition'
-							whileHover={{ scale: 1.1 }}
-							whileTap={{ scale: 0.95 }}
-							aria-label={social.link}
-						>
-							<social.icon className='w-5 h-5' />
-						</motion.a>
-					))}
+					<FooterNav />
 				</div>
 			</footer>
 		</div>

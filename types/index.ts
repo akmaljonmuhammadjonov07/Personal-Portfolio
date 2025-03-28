@@ -1,6 +1,17 @@
 export interface ChildProps {
 	children: React.ReactNode;
 }
+
+interface Skill {
+	name: string;
+	icon: string;
+}
+
+export interface Project {
+	img: string;
+	title: string;
+	skills?: Skill[]; // skills massiv bo'lishi aniq
+}
 export interface ICategory {
 	label: string;
 	icon: string;

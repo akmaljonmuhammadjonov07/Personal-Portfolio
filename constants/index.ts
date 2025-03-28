@@ -2,10 +2,12 @@ import {
 	AppWindow,
 	CircleUser,
 	FileText,
+	Github,
 	Home,
 	Instagram,
 	Linkedin,
 	LucideGithub,
+	Mail,
 	Newspaper,
 	Send,
 } from 'lucide-react';
@@ -125,7 +127,7 @@ export const projects = [
 		title: 'Blog Platform',
 		description: 'A fast and SEO-friendly blog using Next.js and Hygraph.',
 		image: '/projects/blog.png',
-		link: 'https://praktikum-blog-app.vercel.app/',
+		link: 'https://blog.akmaldev.uz/',
 		gitlink: 'https://github.com/akmaljonmuhammadjonov07/Praktikum_Blog_App',
 		skills: [
 			{ title: 'TypeScript' },
@@ -146,6 +148,41 @@ export const certificates = [
 		link: 'https://www.amigoscode.com/',
 		see: '/certificates/certificate-of-completion-for-git-and-github-essentials.pdf',
 		skills: [{ title: 'Git' }, { title: 'Github' }],
+	},
+];
+export const featured_projects = [
+	{
+		title: 'CMS Blog-App',
+		img: '/projects/blog.png',
+		weblink: 'https://blog.akmaldev.uz/',
+		gitlink: 'https://github.com/akmaljonmuhammadjonov07/Praktikum_Blog_App',
+		skills: [
+			{
+				title: 'Next.js',
+				desc: 'The React Framework – created and maintained by @vercel.',
+				icon: '/next.jpg',
+			},
+			{ title: 'React.js', desc: '', icon: '/react.png' },
+			{ title: 'TypeScript', desc: '', icon: '/ts.png' },
+			{ title: 'Shadcn-ui', desc: '', icon: '/shadcn.jpg' },
+			{ title: 'Tailwindcss', desc: '', icon: '/tailwindcss.webp' },
+			{ title: 'Hygraph', desc: '', icon: '/hygraph.png' },
+		],
+	},
+	{
+		title: 'Gym App',
+		img: '/projects/gym.png',
+		weblink: 'https://gym-training-eea21.web.app/',
+		gitlink: 'https://github.com/akmaljonmuhammadjonov07/Gym_App',
+		skills: [
+			{ title: 'Next.js', icon: '/next.jpg' },
+			{ title: 'React.js', icon: '/react.png' },
+			{ title: 'TypeScript', icon: '/ts.png' },
+			{ title: 'ShadcnUI', icon: '/shadcn.jpg' },
+			{ title: 'Tailwindcss', icon: '/tailwindcss.webp' },
+			{ title: 'FireBase', icon: '/firebase.png' },
+			{ title: 'Zustand', icon: '/zustand.png' },
+		],
 	},
 ];
 export const edu = [
@@ -205,7 +242,7 @@ export const edu = [
 		role: 'Git - Github Developer',
 		date: 'December 2024 - 1-month',
 		skills: [{ title: 'Git' }, { title: 'Github' }],
-		btn: [{ title: 'See Amigoscode', link: 'https://codemy.uz/' }],
+		btn: [{ title: 'See Amigoscode', link: 'https://www.amigoscode.com/' }],
 		logo: '/amigos.png',
 		desc: 'Amigoscode — bu amaliy IT kurslari taqdim etuvchi xalqaro onlayn platforma. Platformada Java, Spring Boot, Git/GitHub, DevOps, AWS kabi texnologiyalar bo‘yicha chuqur va amaliy bilimlar beriladi. Ushbu kursda Git va GitHub bo‘yicha chuqur bilimlarni egallab, kod versiyalarini boshqarish va hamkorlikda ishlashni o‘rgandim.',
 		certificate:
@@ -261,11 +298,22 @@ export const experiences = [
 ];
 
 export const footerLinks = [
-	{ link: 'https://t.me/akmaldev14', icon: Send },
+	{ link: 'https://t.me/akmaljonmuhammadjon0v', icon: Send },
 	{ link: 'https://www.instagram.com/akmal__dev/', icon: Instagram },
 	{
 		link: 'https://www.linkedin.com/in/akmaljon-muhammadjonov',
 		icon: Linkedin,
 	},
 	{ link: 'https://github.com/akmaljonmuhammadjonov07/', icon: LucideGithub },
+];
+
+export const contactLinks = [
+	{ link: 'https://t.me/akmaljonmuhammadjon0v', icon: Send },
+	{ link: 'https://www.instagram.com/akmal__dev/', icon: Instagram },
+	{
+		link: 'https://www.linkedin.com/in/akmaljon-muhammadjonov',
+		icon: Linkedin,
+	},
+	{ link: 'https://github.com/akmaljonmuhammadjonov07/', icon: Github },
+	{ link: 'mailto:info@akmaldev.uz', icon: Mail },
 ];

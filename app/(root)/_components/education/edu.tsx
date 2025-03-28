@@ -22,7 +22,9 @@ const Education = () => {
 				{edu.map((e, index) => (
 					<div key={index} className='flex items-center justify-between'>
 						<div className='flex items-center'>
-							<img
+							<Image
+								width={50}
+								height={50}
 								src={e.logo}
 								alt={e.company}
 								className='w-12 h-12 rounded-full mr-4'

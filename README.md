@@ -35,7 +35,6 @@ Technologies used in the project:
 - React.js
 - Next.js
 - Shandcn
-- CSS / SASS
 - Tailwindcss
 - Framer motion
 - Hygraph / CMS

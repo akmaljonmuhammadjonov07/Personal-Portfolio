@@ -5,9 +5,9 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Github, Instagram, Linkedin, Mail, Send } from 'lucide-react';
 import Link from 'next/link';
 import { toast } from 'sonner';
+import { contactLinks } from '@/constants';
 
 export function ContactForm({
 	className,
@@ -119,47 +119,15 @@ export function ContactForm({
 					</span>
 				</div>
 				<div className='flex gap-3 justify-center'>
-					<Link href={'https://t.me/akmaldev14'} target='_blank'>
-						<Button variant='secondary' size='icon' asChild>
-							<span>
-								<Send className='w-6 h-6' />
-							</span>
-						</Button>
-					</Link>
-					<Link href={'https://www.instagram.com/akmal__dev/'} target='_blank'>
-						<Button variant='secondary' size='icon' asChild>
-							<span>
-								<Instagram className='w-6 h-6' />
-							</span>
-						</Button>
-					</Link>
-					<Link
-						href={'https://www.linkedin.com/in/akmaljon-muhammadjonov'}
-						target='_blank'
-					>
-						<Button variant='secondary' size='icon' asChild>
-							<span>
-								<Linkedin className='w-6 h-6' />
-							</span>
-						</Button>
-					</Link>
-					<Link
-						href={'https://github.com/akmaljonmuhammadjonov07/'}
-						target='_blank'
-					>
-						<Button variant='secondary' size='icon' asChild>
-							<span>
-								<Github className='w-6 h-6' />
-							</span>
-						</Button>
-					</Link>
-					<Link href={'mailto:info@akmaldev.uz'}>
-						<Button variant='secondary' size='icon' asChild>
-							<span>
-								<Mail className='w-6 h-6' />
-							</span>
-						</Button>
-					</Link>
+					{contactLinks.map((icon, i) => (
+						<Link key={i} href={icon.link} target='_blank'>
+							<Button variant='secondary' size='icon' asChild>
+								<span>
+									<icon.icon className='w-5 h-5' />
+								</span>
+							</Button>
+						</Link>
+					))}
 				</div>
 			</div>
 		</form>
