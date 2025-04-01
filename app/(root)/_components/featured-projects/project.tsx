@@ -74,8 +74,12 @@ function Projects() {
 														<Globe />
 													</Button>
 												</Link>
-												<Link aria-label='github' href={`${e.gitlink}`}>
-													<Button variant={'outline'} size={'icon'}>
+												<Link href={`${e.gitlink}`}>
+													<Button
+														aria-label='github'
+														variant={'outline'}
+														size={'icon'}
+													>
 														<GithubIcon />
 													</Button>
 												</Link>
