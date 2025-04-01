@@ -34,7 +34,10 @@ const Education = () => {
 									<h3 className='font-semibold '>{e.company}</h3>
 									<Dialog>
 										<DialogTrigger asChild>
-											<button className='sm:hidden max-sm:hidden md:flex'>
+											<button
+												aria-label='visit'
+												className='sm:hidden max-sm:hidden md:flex'
+											>
 												<SquareArrowOutUpRight size={15} />
 											</button>
 										</DialogTrigger>

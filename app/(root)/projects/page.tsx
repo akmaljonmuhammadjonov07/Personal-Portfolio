@@ -29,8 +29,20 @@ export default function Page() {
 							}}
 							whileTap={{ scale: 0.92 }}
 							transition={{ duration: 0.1, ease: 'easeInOut' }}
-							className='bg-white dark:bg-secondary dark:text-white shadow-2xl rounded-2xl overflow-hidden p-4 transition-all relative'
+							className='bg-white dark:[background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] animate-border dark:text-white shadow-2xl rounded-2xl overflow-hidden p-4 transition-all relative border-[3px] border-transparent'
 						>
+							<motion.div
+								initial={{ rotate: 0 }}
+								animate={{ rotate: 360 }}
+								transition={{ duration: 5, repeat: Infinity, ease: 'linear' }}
+								className='absolute inset-0 border-[3px] border-transparent rounded-2xl'
+								style={{
+									border:
+										'conic-gradient(from 0deg, #6366f1, #ec4899, #6366f1)',
+									maskImage: 'linear-gradient(white, white)',
+									WebkitMaskImage: 'linear-gradient(white, white)',
+								}}
+							/>
 							<motion.div
 								initial={{ scale: 0 }}
 								animate={{ scale: 1 }}
@@ -79,7 +91,8 @@ export default function Page() {
 										<Button
 											variant={'secondary'}
 											size={'icon'}
-											className='h-full flex items-center'
+											aria-label='github'
+											className='h-full dark:bg-secondary bg-slate-300 p-2 flex items-center'
 										>
 											<Github />
 										</Button>

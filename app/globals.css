@@ -12,6 +12,12 @@ body {
 	}
 }
 
+@property --border-angle {
+	inherits: false;
+	initial-value: 0deg;
+	syntax: '<angle>';
+}
+
 @layer base {
 	:root {
 		--background: 26, 100%, 97%;

@@ -51,6 +51,19 @@ const config: Config = {
 					'5': 'hsl(var(--chart-5))',
 				},
 			},
+			animation: {
+				border: 'border 4s linear infinite',
+				rotate: 'rotate 10s linear infinite',
+			},
+			keyframes: {
+				border: {
+					to: { '--border-angle': '360deg' },
+				},
+				rotate: {
+					'0%': { transform: 'rotate(0deg) scale(10)' },
+					'100%': { transform: 'rotate(-360deg) scale(10)' },
+				},
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',

@@ -6,12 +6,13 @@ import React from 'react';
 function FooterNav() {
 	return (
 		<div>
-			<div className='sticky bottom-5 w-full max-w-sm sm:max-w-md bg-secondary rounded-full flex justify-center items-center gap-6 text-black dark:text-white'>
+			<div className='sticky bottom-5 z-50 w-full max-w-sm sm:max-w-md dark:bg-secondary bg-slate-200 rounded-full flex justify-center items-center gap-6 text-black dark:text-white'>
 				<motion.a
 					href='mailto:info@akmaldev.uz'
 					className='flex items-center gap-2 hover:text-black transition'
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.95 }}
+					aria-label='mail'
 				>
 					<Mail className='w-5 h-5' />
 					<span className='hidden sm:inline'>info@akmaldev.uz</span>

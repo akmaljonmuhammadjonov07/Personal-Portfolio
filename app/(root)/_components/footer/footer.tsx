@@ -64,24 +64,41 @@ function Footer() {
 					className='flex flex-col sm:flex-row gap-4 w-full'
 					onSubmit={handleSubmit}
 				>
-					<Input
-						type='email'
-						placeholder='Your email address'
-						value={email}
-						onChange={e => setEmail(e.target.value)}
-						className='w-full px-4 py-2 text-lg rounded-md border border-gray-300'
-					/>
+					<div className='relative z-0 flex w-full cursor-pointer items-center overflow-hidden rounded-md p-[1px]'>
+						<div className='relative z-10 flex w-full dark:bg-[#020F18] bg-slate-200 text-white rounded-md'>
+							<Input
+								value={email}
+								onChange={e => setEmail(e.target.value)}
+								type='email'
+								className='w-full px-4 py-2 text-lg placeholder:text-gray-500 dark:[background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-md border-transparent animate-border dark:placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-cyan-500'
+								placeholder='Your email address'
+							/>
+						</div>
+					</div>
+
 					<Button
 						type='submit'
 						size={'lg'}
+						asChild={false}
 						disabled={loading}
-						className='w-full sm:w-auto px-6 py-2 flex items-center justify-center gap-2'
+						className='group bg-slate-300 dark:bg-blue-500 shadow relative flex items-center justify-center overflow-hidden rounded-md font-medium'
 					>
-						<User2 className='w-4 h-4' />
-						{loading ? 'Yuborilmoqda...' : 'Join Today'}
+						<div className='flex gap-1 h-12 translate-y-0 items-center justify-center px-6 dark:text-white text-black transition group-hover:-translate-y-[150%]'>
+							Join Today
+							<User2 className='w-4 h-4' />
+						</div>
+
+						{loading ? (
+							'Yuborilmoqda...'
+						) : (
+							<div className='absolute inline-flex gap-1 h-12 w-full translate-y-[100%] items-center justify-center bg-black dark:bg-gray-500 px-6 text-neutral-50 transition duration-300 group-hover:translate-y-0'>
+								Join Today
+								<User2 className='w-4 h-4' />
+							</div>
+						)}
 					</Button>
 				</form>
-				<div className='sticky bottom-5 w-full max-w-sm sm:max-w-md p-4 bg-secondary shadow-lg rounded-full flex justify-center items-center gap-6 text-black dark:text-white'>
+				<div className='sticky bottom-5 w-full max-w-sm sm:max-w-md p-4 dark:bg-secondary bg-slate-200 shadow-lg rounded-full flex justify-center items-center gap-6 text-black dark:text-white'>
 					<FooterNav />
 				</div>
 			</footer>

@@ -31,16 +31,14 @@ function HomePage() {
 						priority
 					/>
 					<div className='text-center lg:w-2/3 grid justify-items-center'>
-						<h1 className='text-start sm:text-2xl text-3xl mb-4 font-semibold text-gray-900 dark:text-gray-300'>
-							About me
-						</h1>
-						<h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-gray-300'>
-							Hi, Im Akmal 👋
-						</h1>
+						<h1 className='title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900 dark:text-blue-400'>
+							Akmaljon Muhammadjonov
+						</h1>{' '}
 						<p className='mb-8 leading-relaxed text-gray-700 dark:text-gray-300 w-[70%]'>
 							Hello! My name is <span className='font-bold'>Akmaljon</span>. I
-							am a passionate frontend developer with more than 1 year of
-							experience. I specialize in creating responsive, modern and
+							am a passionate <span className='font-bold'>Frontend</span>{' '}
+							developer with more than 1 year of experience. I specialize in
+							creating <span className='font-bold'>responsive</span>, modern and
 							user-friendly websites that leave a lasting impression, and I m a
 							<span className='p-1'>
 								<span className='font-bold'>React.js</span>

@@ -72,7 +72,7 @@ function ProjectCard() {
 								<Button
 									variant={'secondary'}
 									size={'icon'}
-									className='h-full w-full p-2 flex items-center'
+									className='h-full w-full dark:bg-secondary bg-slate-200 p-2 flex items-center'
 								>
 									See Certificate
 								</Button>

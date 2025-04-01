@@ -85,6 +85,7 @@ export function ContactForm({
 						placeholder='m@example.com'
 						value={email}
 						onChange={e => setEmail(e.target.value)}
+						className='dark:bg-secondary bg-gray-200'
 						required
 					/>
 				</div>
@@ -96,6 +97,7 @@ export function ContactForm({
 						placeholder='Create your name'
 						value={name}
 						onChange={e => setName(e.target.value)}
+						className='dark:bg-secondary bg-gray-200'
 						required
 					/>
 				</div>
@@ -107,6 +109,7 @@ export function ContactForm({
 						placeholder='Xabaringizni kiriting...'
 						value={message}
 						onChange={e => setMessage(e.target.value)}
+						className='dark:bg-secondary bg-gray-200'
 						required
 					/>
 				</div>
@@ -121,7 +124,13 @@ export function ContactForm({
 				<div className='flex gap-3 justify-center'>
 					{contactLinks.map((icon, i) => (
 						<Link key={i} href={icon.link} target='_blank'>
-							<Button variant='secondary' size='icon' asChild>
+							<Button
+								variant='secondary'
+								className='dark:bg-secondary bg-slate-200'
+								size='icon'
+								aria-label='social'
+								asChild
+							>
 								<span>
 									<icon.icon className='w-5 h-5' />
 								</span>
