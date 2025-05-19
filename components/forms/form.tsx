@@ -9,7 +9,7 @@ import Link from 'next/link';
 import { toast } from 'sonner';
 import { contactLinks } from '@/constants';
 
-export function ContactForm({
+export default function ContactForm({
 	className,
 	...props
 }: React.ComponentPropsWithoutRef<'form'>) {
