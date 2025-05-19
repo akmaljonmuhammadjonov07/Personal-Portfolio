@@ -21,7 +21,7 @@ async function Page() {
 					width={600}
 					height={400}
 					src='/placeholder.svg'
-					alt='Image'
+					alt='Contact Image'
 					className='absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale'
 				/>
 			</div>
