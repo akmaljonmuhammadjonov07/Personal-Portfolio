@@ -1,4 +1,4 @@
-import ContactForm from '@/components/Forms/form';
+import ContactForm from '@/components/form/Form';
 import { Metadata } from 'next';
 import Image from 'next/image';
 
