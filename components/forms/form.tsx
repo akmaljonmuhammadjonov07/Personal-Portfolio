@@ -113,7 +113,11 @@ export function ContactForm({
 						required
 					/>
 				</div>
-				<Button onClick={handleSubmit} className='w-full' disabled={loading}>
+				<Button
+					onClick={handleSubmit}
+					className='w-full bg-blue-600 text-white dark:text-black'
+					disabled={loading}
+				>
 					{loading ? 'Yuborilmoqda...' : 'Send Message'}
 				</Button>
 				<div className='relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border'>

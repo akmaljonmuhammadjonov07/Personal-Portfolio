@@ -6,10 +6,10 @@ import { certificates } from '@/constants';
 import { ExternalLink } from 'lucide-react';
 import { Badge } from '../ui/badge';
 
-function ProjectCard() {
+function CertCard() {
 	return (
-		<div>
-			{certificates.map((project, index) => (
+		<div className='grid md:grid-cols-2 lg:grid-cols-3 max-w-6xl m-auto gap-6'>
+			{certificates.map((certificate, index) => (
 				<motion.div
 					key={index}
 					initial={{ opacity: 0, y: 50 }}
@@ -21,8 +21,19 @@ function ProjectCard() {
 					}}
 					whileTap={{ scale: 0.92 }}
 					transition={{ duration: 0.1, ease: 'easeInOut' }}
-					className='bg-white dark:bg-secondary dark:text-white shadow-2xl rounded-2xl overflow-hidden p-4 transition-all relative'
+					className='bg-white dark:[background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.indigo.500)_86%,_theme(colors.indigo.300)_90%,_theme(colors.indigo.500)_94%,_theme(colors.slate.600/.48))_border-box] animate-border dark:text-white shadow-2xl rounded-2xl overflow-hidden p-4 transition-all relative border-[3px] border-transparent'
 				>
+					<motion.div
+						initial={{ rotate: 0 }}
+						animate={{ rotate: 360 }}
+						transition={{ duration: 5, repeat: Infinity, ease: 'linear' }}
+						className='absolute inset-0 border-[3px] border-transparent rounded-2xl'
+						style={{
+							border: 'conic-gradient(from 0deg, #6366f1, #ec4899, #6366f1)',
+							maskImage: 'linear-gradient(white, white)',
+							WebkitMaskImage: 'linear-gradient(white, white)',
+						}}
+					/>
 					<motion.div
 						initial={{ scale: 0 }}
 						animate={{ scale: 1 }}
@@ -31,39 +42,39 @@ function ProjectCard() {
 					/>
 					<div className='relative w-full h-40 rounded-lg overflow-hidden'>
 						<Image
-							src={project.image}
-							alt={project.title}
+							src={certificate.image}
+							alt={certificate.title}
 							width={400}
 							height={200}
-							className='w-full h-full object-cover border'
+							className='w-full h-full object-cover'
 						/>
 					</div>
 					<div className='p-4 relative z-10'>
 						<h3 className='text-lg font-semibold dark:text-white text-gray-600'>
-							{project.title}
+							{certificate.title}
 						</h3>
 						<h3 className='text-sm text-gray-600 dark:text-gray-300 min-h-12 flex items-center'>
-							{project.description}
+							{certificate.description}
 						</h3>
 						<div className='gap-2 flex flex-wrap my-2 mb-4'>
-							{project.skills?.map((skill, i) => (
+							{certificate.skills?.map((skill, i) => (
 								<Badge key={i}>{skill.title}</Badge>
 							))}
 						</div>
 						<div className='flex items-center justify-between relative h-10 px-0'>
 							<motion.a
-								href={project.link}
+								href={certificate.link}
 								target='_blank'
 								rel='noopener noreferrer'
 								whileHover={{ scale: 1.15 }}
-								className='flex items-center gap-2 text-blue-600 hover:underline dark:text-white h-full'
+								className='flex items-center gap-2 text-blue-600 dark:text-white hover:underline h-full'
 							>
 								View Site <ExternalLink size={16} />
 							</motion.a>
 
 							<motion.a
 								target='_blank'
-								href={project.see}
+								href={certificate.see}
 								rel='noopener noreferrer'
 								custom={'Resume_Akmaljon.pdf'}
 								whileHover={{ scale: 1.15, color: '#1d4ed8' }}
@@ -85,4 +96,4 @@ function ProjectCard() {
 	);
 }
 
-export default ProjectCard;
+export default CertCard;

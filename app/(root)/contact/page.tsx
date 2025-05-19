@@ -1,6 +1,7 @@
-import { ContactForm } from '@/components/forms/form';
+import { ContactForm } from '@/components/Forms/form';
 
 import { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
 	title: 'Contact us',
@@ -17,7 +18,9 @@ async function Page() {
 				</div>
 			</div>
 			<div className='relative hidden bg-muted lg:block'>
-				<img
+				<Image
+					width={600}
+					height={400}
 					src='/placeholder.svg'
 					alt='Image'
 					className='absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale'

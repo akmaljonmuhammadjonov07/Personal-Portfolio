@@ -138,6 +138,32 @@ export const projects = [
 			{ title: 'SEO' },
 		],
 	},
+	{
+		title: 'Weather App',
+		description: 'A weather app using React.js and OpenWeather API.',
+		image: '/projects/weather.webp',
+		link: 'https://weather.akmaldev.uz/',
+		gitlink: 'https://github.com/akmaljonmuhammadjonov07/weather-app',
+		skills: [
+			{ title: 'React.js' },
+			{ title: 'Tailwindcss' },
+			{ title: 'Axios' },
+			{ title: 'OpenWeather-API' },
+		],
+	},
+	{
+		title: 'Paint App',
+		description: 'A paint app using JavaScript and HTML5 Canvas.',
+		image: '/projects/paint.png',
+		link: 'https://paint.akmaldev.uz/',
+		gitlink: 'https://github.com/akmaljonmuhammadjonov07/Paint_App',
+		skills: [
+			{ title: 'JavaScript' },
+			{ title: 'HTML5' },
+			{ title: 'CSS' },
+			{ title: 'Canvas' },
+		],
+	},
 ];
 
 export const certificates = [
@@ -164,7 +190,7 @@ export const featured_projects = [
 			},
 			{ title: 'React.js', desc: '', icon: '/react.png' },
 			{ title: 'TypeScript', desc: '', icon: '/ts.png' },
-			{ title: 'Shadcn-ui', desc: '', icon: '/shadcn.jpg' },
+			{ title: 'Shadcn-ui', desc: '', icon: '/shadcn.webp' },
 			{ title: 'Tailwindcss', desc: '', icon: '/tailwindcss.webp' },
 			{ title: 'Hygraph', desc: '', icon: '/hygraph.png' },
 		],
@@ -178,13 +204,14 @@ export const featured_projects = [
 			{ title: 'Next.js', icon: '/next.jpg' },
 			{ title: 'React.js', icon: '/react.png' },
 			{ title: 'TypeScript', icon: '/ts.png' },
-			{ title: 'ShadcnUI', icon: '/shadcn.jpg' },
+			{ title: 'ShadcnUI', icon: '/shadcn.webp' },
 			{ title: 'Tailwindcss', icon: '/tailwindcss.webp' },
 			{ title: 'FireBase', icon: '/firebase.png' },
 			{ title: 'Zustand', icon: '/zustand.png' },
 		],
 	},
 ];
+
 export const edu = [
 	{
 		company: 'Codemy',

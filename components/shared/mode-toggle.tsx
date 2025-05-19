@@ -22,8 +22,8 @@ function ModeToggle() {
 		</Button>
 	) : (
 		<Button
-			size={'icon'}
 			aria-label='moon'
+			size={'icon'}
 			onClick={() => setTheme('dark')}
 			variant={'secondary'}
 		>

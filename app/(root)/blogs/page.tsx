@@ -1,4 +1,4 @@
-import BlogCard from '@/components/BlogCard/card';
+import BlogCard from '@/components/Cards/BlogCard';
 
 import { getBlogs } from '@/service/blog.service';
 import { Metadata } from 'next';

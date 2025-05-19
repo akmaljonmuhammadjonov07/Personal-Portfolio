@@ -16,7 +16,7 @@ function Navbar() {
 	const pathname = usePathname();
 
 	return (
-		<div className='w-full fixed top-0 left-0 z-50 flex justify-center p-4 '>
+		<nav className='w-full fixed top-0 left-0 z-50 flex justify-center p-4 '>
 			<motion.nav
 				className='h-14 bg-secondary shadow-2xl [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] dark:bg-secondary dark:shadow-2xl w-auto px-3 flex justify-center items-center rounded-full'
 				initial='initial'
@@ -50,6 +50,7 @@ function Navbar() {
 										}}
 									/>
 									<motion.a
+										aria-label={item.name}
 										href={item.route}
 										className={`flex items-center gap-2 sm:px-4 max-sm:px-3 py-2 relative z-10 bg-transparent transition-colors rounded-xl ${
 											isActive
@@ -123,7 +124,7 @@ function Navbar() {
 					</motion.li>
 				</ul>
 			</motion.nav>
-		</div>
+		</nav>
 	);
 }
 

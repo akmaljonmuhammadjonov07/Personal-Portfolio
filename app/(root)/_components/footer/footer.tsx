@@ -81,7 +81,7 @@ function Footer() {
 						size={'lg'}
 						asChild={false}
 						disabled={loading}
-						className='group bg-slate-300 dark:bg-blue-500 shadow relative flex items-center justify-center overflow-hidden rounded-md font-medium'
+						className='group bg-slate-200 dark:bg-blue-600 shadow relative flex items-center justify-center overflow-hidden rounded-md font-medium'
 					>
 						<div className='flex gap-1 h-12 translate-y-0 items-center justify-center px-6 dark:text-white text-black transition group-hover:-translate-y-[150%]'>
 							Join Today

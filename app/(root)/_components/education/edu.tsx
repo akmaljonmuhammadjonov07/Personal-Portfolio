@@ -18,7 +18,7 @@ const Education = () => {
 	return (
 		<div className='max-w-4xl md:max-w-2xl xl:max-w-4xl mx-auto p-6'>
 			<h2 className='text-2xl font-bold mb-4'>Education</h2>
-			<ul className='space-y-6'>
+			<div className='space-y-6'>
 				{edu.map((e, index) => (
 					<div key={index} className='flex items-center justify-between'>
 						<div className='flex items-center'>
@@ -100,7 +100,7 @@ const Education = () => {
 						</div>
 					</div>
 				))}
-			</ul>
+			</div>
 		</div>
 	);
 };
