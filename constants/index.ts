@@ -96,7 +96,7 @@ export const projects = [
 	{
 		title: 'Portfolio Website',
 		description: 'A personal portfolio built with Next.js and Tailwind.',
-		image: '/projects/portfolio.png',
+		image: '/projects/portfolio.webp',
 		link: 'https://akmaldev.uz',
 		gitlink: 'https://github.com/akmaljonmuhammadjonov07/Personal-Portfolio',
 		skills: [
@@ -111,7 +111,7 @@ export const projects = [
 	{
 		title: 'Gym App ',
 		description: 'A Gym App built with Next.js and Firebase.',
-		image: '/projects/gym.png',
+		image: '/projects/gym.webp',
 		link: 'https://gym-training-eea21.web.app/',
 		gitlink: 'https://github.com/akmaljonmuhammadjonov07/Gym_App',
 		skills: [
@@ -126,7 +126,7 @@ export const projects = [
 	{
 		title: 'Blog Platform',
 		description: 'A fast and SEO-friendly blog using Next.js and Hygraph.',
-		image: '/projects/blog.png',
+		image: '/projects/blog.webp',
 		link: 'https://blog.akmaldev.uz/',
 		gitlink: 'https://github.com/akmaljonmuhammadjonov07/Praktikum_Blog_App',
 		skills: [
@@ -154,7 +154,7 @@ export const projects = [
 	{
 		title: 'Paint App',
 		description: 'A paint app using JavaScript and HTML5 Canvas.',
-		image: '/projects/paint.png',
+		image: '/projects/paint.webp',
 		link: 'https://paint.akmaldev.uz/',
 		gitlink: 'https://github.com/akmaljonmuhammadjonov07/Paint_App',
 		skills: [
@@ -168,9 +168,9 @@ export const projects = [
 
 export const certificates = [
 	{
-		title: 'Portfolio Website',
+		title: 'Github',
 		description: 'My first certificate from Amigoscode',
-		image: '/certificates/amigos_certificate.png',
+		image: '/certificates/amigos_certificate.webp',
 		link: 'https://www.amigoscode.com/',
 		see: '/certificates/certificate-of-completion-for-git-and-github-essentials.pdf',
 		skills: [{ title: 'Git' }, { title: 'Github' }],
@@ -179,7 +179,7 @@ export const certificates = [
 export const featured_projects = [
 	{
 		title: 'CMS Blog-App',
-		img: '/projects/blog.png',
+		img: '/projects/blog.webp',
 		weblink: 'https://blog.akmaldev.uz/',
 		gitlink: 'https://github.com/akmaljonmuhammadjonov07/Praktikum_Blog_App',
 		skills: [
@@ -197,7 +197,7 @@ export const featured_projects = [
 	},
 	{
 		title: 'Gym App',
-		img: '/projects/gym.png',
+		img: '/projects/gym.webp',
 		weblink: 'https://gym-training-eea21.web.app/',
 		gitlink: 'https://github.com/akmaljonmuhammadjonov07/Gym_App',
 		skills: [

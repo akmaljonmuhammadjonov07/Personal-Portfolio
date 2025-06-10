@@ -26,7 +26,7 @@ function FeaturedProjectCard() {
 									width={500}
 									height={500}
 									src={e.img}
-									alt='project'
+									alt={e.title}
 									className='h-72 w-full group-hover:border-4 border-4 group-hover:border-[#76aaf82d] rounded-lg object-cover transition-all duration-300'
 								/>
 							</figure>

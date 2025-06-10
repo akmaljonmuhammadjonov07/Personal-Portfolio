@@ -18,8 +18,9 @@ function HomePage() {
 						height={180}
 						className='lg:w-28 lg:h-28 mb-10 object-cover object-center rounded-full text-white'
 						alt='hero'
+						loading='eager'
 						src='/user.webp'
-						priority
+						priority={true}
 					/>
 					<div className='text-center lg:w-2/3 grid justify-items-center'>
 						<h1 className='title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900 dark:text-blue-400'>
