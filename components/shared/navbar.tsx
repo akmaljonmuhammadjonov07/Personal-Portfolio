@@ -54,7 +54,7 @@ function Navbar() {
 										href={item.route}
 										className={`flex items-center gap-2 sm:px-4 max-sm:px-3 py-2 relative z-10 bg-transparent transition-colors rounded-xl ${
 											isActive
-												? 'text-primary font-semibold'
+												? 'text-blue-400 font-semibold'
 												: 'text-muted-foreground group-hover:text-foreground'
 										}`}
 										variants={itemVariants}
@@ -67,7 +67,7 @@ function Navbar() {
 										<span
 											className={`transition-colors duration-300 ${
 												isActive
-													? 'text-primary'
+													? 'text-blue-400'
 													: `group-hover:${
 															navLinks.iconColors[
 																index % navLinks.iconColors.length
@@ -95,7 +95,7 @@ function Navbar() {
 												navLinks.iconColors[index % navLinks.iconColors.length]
 											} text-foreground`}
 										>
-											<Icon className='h-5 w-5' />
+											<Icon className='h-5 w-5 text-blue-500' />
 										</span>
 										<span>{item.name}</span>
 									</motion.a>

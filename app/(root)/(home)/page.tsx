@@ -25,7 +25,7 @@ function HomePage() {
 						<h1 className='title-font sm:text-4xl text-3xl mb-4 font-semibold text-gray-900 dark:text-blue-400'>
 							Akmaljon Muhammadjonov
 						</h1>{' '}
-						<p className='mb-8 leading-relaxed text-gray-700 dark:text-gray-300 w-[70%]'>
+						<p className='mb-8 leading-relaxed text-gray-700 dark:text-gray-300 max-w-2xl'>
 							Hello! My name is <span className='font-bold'>Akmaljon</span>. I
 							am a passionate <span className='font-bold'>Frontend</span>{' '}
 							developer with more than 1 year of experience. I specialize in

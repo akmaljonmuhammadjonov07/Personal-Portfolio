@@ -45,7 +45,7 @@ function FeaturedProjectCard() {
 																	width={500}
 																	height={500}
 																	src={skill.icon}
-																	className='w-10 h-10 relative z-10 border-2 rounded-full p-0 m-0'
+																	className='w-10 h-10 relative object-cover z-10 border-2 rounded-full p-0 m-0'
 																	alt='Hygraph'
 																/>
 															</div>
@@ -58,7 +58,7 @@ function FeaturedProjectCard() {
 											))}
 										</div>
 										<div className='flex gap-3'>
-											<Link href={e.weblink}>
+											<Link target='_blank' href={e.weblink}>
 												<Button
 													aria-label='demo'
 													variant={'outline'}
@@ -67,7 +67,7 @@ function FeaturedProjectCard() {
 													<Globe />
 												</Button>
 											</Link>
-											<Link href={`${e.gitlink}`}>
+											<Link target='_blank' href={`${e.gitlink}`}>
 												<Button
 													aria-label='github'
 													variant={'outline'}
