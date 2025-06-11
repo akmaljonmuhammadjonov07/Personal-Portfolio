@@ -72,17 +72,19 @@ export default function ContactForm({
 		>
 			<div className='flex flex-col items-center gap-2 text-center'>
 				<h1 className='text-2xl font-bold'>Contact Me</h1>
-				<p className='text-sm text-muted-foreground'>
+				<p className='text-sm dark:text-muted-foreground text-gray-600'>
 					Email va xabaringizni kiriting, biz tez orada javob beramiz.
 				</p>
 			</div>
 			<div className='grid gap-6'>
 				<div className='grid gap-2'>
-					<Label htmlFor='email'>Email</Label>
+					<Label htmlFor='email' className='text-gray-600 dark:text-white'>
+						Email
+					</Label>
 					<Input
 						id='email'
 						type='email'
-						placeholder='m@example.com'
+						placeholder='example@gmail.com'
 						value={email}
 						onChange={e => setEmail(e.target.value)}
 						className='dark:bg-secondary bg-gray-200'
@@ -90,7 +92,9 @@ export default function ContactForm({
 					/>
 				</div>
 				<div className='grid gap-2'>
-					<Label htmlFor='email'>Your name</Label>
+					<Label htmlFor='email' className='text-gray-600 dark:text-white'>
+						Your name
+					</Label>
 					<Input
 						id='name'
 						type='name'
@@ -102,7 +106,9 @@ export default function ContactForm({
 					/>
 				</div>
 				<div className='grid gap-2'>
-					<Label htmlFor='message'>Message</Label>
+					<Label htmlFor='message' className='text-gray-600 dark:text-white'>
+						Message
+					</Label>
 					<Input
 						id='message'
 						type='text'
@@ -115,13 +121,13 @@ export default function ContactForm({
 				</div>
 				<Button
 					onClick={handleSubmit}
-					className='w-full bg-blue-600 text-white dark:text-black'
+					className='w-full dark:bg-blue-500 bg-blue-600 text-white dark:text-black'
 					disabled={loading}
 				>
 					{loading ? 'Yuborilmoqda...' : 'Send Message'}
 				</Button>
 				<div className='relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border'>
-					<span className='relative z-10 bg-background px-2 text-muted-foreground'>
+					<span className='relative z-10 bg-background px-2 dark:text-muted-foreground text-gray-600'>
 						Or continue with
 					</span>
 				</div>

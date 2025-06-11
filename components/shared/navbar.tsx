@@ -1,6 +1,5 @@
 'use client';
 import ModeToggle from '@/components/shared/mode-toggle';
-
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import {
@@ -16,9 +15,9 @@ function Navbar() {
 	const pathname = usePathname();
 
 	return (
-		<nav className='w-full fixed top-0 left-0 z-50 flex justify-center p-4 '>
+		<nav className='w-full fixed top-0 left-0 z-50 flex justify-center p-4'>
 			<motion.nav
-				className='h-14 bg-secondary shadow-2xl [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] dark:bg-secondary dark:shadow-2xl w-auto px-3 flex justify-center items-center rounded-full'
+				className='h-14 bg-secondary dark:bg-secondary dark:shadow-2xl shadow border border-gray-300 dark:border-transparent w-auto px-3 flex justify-center items-center rounded-full'
 				initial='initial'
 				whileHover='hover'
 			>
@@ -54,8 +53,8 @@ function Navbar() {
 										href={item.route}
 										className={`flex items-center gap-2 sm:px-4 max-sm:px-3 py-2 relative z-10 bg-transparent transition-colors rounded-xl ${
 											isActive
-												? 'text-blue-400 font-semibold'
-												: 'text-muted-foreground group-hover:text-foreground'
+												? 'text-blue-600 dark:text-blue-400 font-semibold'
+												: 'dark:text-muted-foreground text-gray-800 dark:group-hover:text-white group-hover:text-black'
 										}`}
 										variants={itemVariants}
 										transition={sharedTransition}
@@ -67,12 +66,12 @@ function Navbar() {
 										<span
 											className={`transition-colors duration-300 ${
 												isActive
-													? 'text-blue-400'
+													? 'text-blue-600 dark:text-blue-400'
 													: `group-hover:${
 															navLinks.iconColors[
 																index % navLinks.iconColors.length
 															]
-													  } text-foreground`
+													  } text-gray-800 dark:text-white`
 											}`}
 										>
 											<Icon className='h-5 w-5' />
@@ -81,7 +80,7 @@ function Navbar() {
 									</motion.a>
 									<motion.a
 										href={item.route}
-										className='flex items-center gap-2 px-4 py-2 absolute inset-0 z-10 bg-transparent text-muted-foreground group-hover:text-foreground transition-colors rounded-xl'
+										className='flex items-center gap-2 px-4 py-2 absolute inset-0 z-10 bg-transparent text-gray-800 dark:group-hover:text-white group-hover:text-black transition-colors rounded-xl'
 										variants={backVariants}
 										transition={sharedTransition}
 										style={{
@@ -93,9 +92,9 @@ function Navbar() {
 										<span
 											className={`transition-colors duration-300 group-hover:${
 												navLinks.iconColors[index % navLinks.iconColors.length]
-											} text-foreground`}
+											} text-gray-80`}
 										>
-											<Icon className='h-5 w-5 text-blue-500' />
+											<Icon className='h-5 w-5 text-blue-600 dark:text-blue-400' />
 										</span>
 										<span>{item.name}</span>
 									</motion.a>

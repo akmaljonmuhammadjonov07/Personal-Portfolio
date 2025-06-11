@@ -65,7 +65,7 @@ function Footer() {
 					onSubmit={handleSubmit}
 				>
 					<div className='relative z-0 flex w-full cursor-pointer items-center overflow-hidden rounded-md p-[1px]'>
-						<div className='relative z-10 flex w-full dark:bg-[#020F18] bg-slate-200 text-white rounded-md'>
+						<div className='relative z-10 flex w-full dark:bg-[#020F18] bg-secondary border-gray-300 border dark:border-0 dark:text-white text-foreground rounded-md'>
 							<Input
 								value={email}
 								onChange={e => setEmail(e.target.value)}
@@ -81,7 +81,7 @@ function Footer() {
 						size={'lg'}
 						asChild={false}
 						disabled={loading}
-						className='group bg-slate-200 dark:bg-blue-600 shadow relative flex items-center justify-center overflow-hidden rounded-md font-medium'
+						className='group bg-slate-300 dark:bg-blue-600 shadow relative flex items-center justify-center overflow-hidden rounded-md font-medium'
 					>
 						<div className='flex gap-1 h-12 translate-y-0 items-center justify-center px-6 dark:text-white text-black transition group-hover:-translate-y-[150%]'>
 							Join Today

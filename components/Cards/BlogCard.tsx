@@ -38,7 +38,7 @@ function BlogCard(blog: IBlog) {
 					<h2 className='font-space-grotesk text-3xl transition-colors group-hover:text-blue-500 max-md:text-2xl'>
 						{blog.title}
 					</h2>
-					<p className='line-clamp-3 text-muted-foreground'>
+					<p className='line-clamp-3 dark:text-muted-foreground text-gray-600'>
 						{blog.description}
 					</p>
 
