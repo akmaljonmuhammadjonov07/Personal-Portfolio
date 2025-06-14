@@ -2,10 +2,10 @@
 import Projects from '../_components/featured-projects/project';
 import Education from '../_components/education/edu';
 import SkillApp from '../_components/skills';
-import { Button } from '@/components/ui/button';
+// import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 
-import Link from 'next/link';
+// import Link from 'next/link';
 import HomePageModal from '@/components/shared/HomePageModal';
 
 function HomePage() {
@@ -40,19 +40,19 @@ function HomePage() {
 								developer.
 							</span>
 						</p>
-						<div className='justify-center gap-3 hidden sm:hidden max-sm:hidden md:flex'>
+						<div className='justify-center gap-3 sm:flex max-sm:flex md:flex'>
 							<HomePageModal />
 						</div>
-						<div className='justify-center gap-3 sm:flex md:hidden'>
+						{/* <div className='justify-center gap-3 sm:flex md:hidden'>
 							<Link
 								target='_blank'
 								rel='noreferrer'
-								href={'/resume/Resume.pdf'}
+								href={'/resume/Resume.webp'}
 								title='CV'
 							>
 								<Button>Download CV</Button>
 							</Link>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</section>

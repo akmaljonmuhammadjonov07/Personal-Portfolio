@@ -14,7 +14,7 @@ import { Button } from '../ui/button';
 
 function HomePageModal() {
 	return (
-		<div>
+		<div className=''>
 			{' '}
 			<Dialog>
 				<DialogTrigger asChild>
@@ -29,7 +29,7 @@ function HomePageModal() {
 						<div className='absolute top-[40%] left-[20%] h-2 w-2 group-hover:h-full group-hover:w-full rounded-lg bg-black scale-[1] dark:group-hover:bg-blue-500 group-hover:bg-[#7a7f9a] group-hover:scale-[1.8] transition-all duration-300 group-hover:top-[0%] group-hover:left-[0%] '></div>
 					</button>
 				</DialogTrigger>
-				<DialogContent className='xl:max-w-7xl max-sm:max-w-xl sm:hidden md:block'>
+				<DialogContent className='xl:max-w-5xl xl:h-[80vh] xl:overflow-hidden md:max-w-2xl max-md:max-w-6xl max-md:h-[75vh] max-md:overflow-y-scroll max-sm:max-w-sm md:h-[75vh] sm:max-w-md max-sm:h-[85vh] max-sm:overflow-y-scroll md:overflow-y-auto sm:block md:block'>
 					<DialogHeader>
 						<DialogTitle>My profile</DialogTitle>
 					</DialogHeader>

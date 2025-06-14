@@ -57,11 +57,17 @@ const config: Config = {
 			},
 			keyframes: {
 				border: {
-					to: { '--border-angle': '360deg' },
+					to: {
+						'--border-angle': '360deg',
+					},
 				},
 				rotate: {
-					'0%': { transform: 'rotate(0deg) scale(10)' },
-					'100%': { transform: 'rotate(-360deg) scale(10)' },
+					'0%': {
+						transform: 'rotate(0deg) scale(10)',
+					},
+					'100%': {
+						transform: 'rotate(-360deg) scale(10)',
+					},
 				},
 			},
 			borderRadius: {
@@ -71,6 +77,6 @@ const config: Config = {
 			},
 		},
 	},
-	plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
+	plugins: [import('tailwindcss-animate'), require('@tailwindcss/typography')],
 };
 export default config;
